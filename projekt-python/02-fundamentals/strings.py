@@ -175,7 +175,7 @@ print(y + "-" + m + "-" + d)
 
 p = "To je promenna v Pythonu"
 
-def yeet(p):
+def promene(p):
     x = p.lower()
     y = x.replace(" ", "_")
     print("To je promenna v Pythonu = " + y)
@@ -184,9 +184,9 @@ def yeet(p):
     j = k.replace(" ", "")
     print("To je promenna v Pythonu = " + j)
 
-yeet(p)
+promene(p)
 
-def heslo():
+def vytvorHeslo():
     v = ''.join(random.sample(string.ascii_uppercase, 3))
     m = ''.join(random.sample(string.ascii_lowercase, 3))
     c = ''.join(random.sample(string.digits, 3))
@@ -198,4 +198,4 @@ def heslo():
 o = input("Zadejte počet osob: ")
 
 for i in range(eval(o)):
-    print(heslo())
+    print(vytvorHeslo())
